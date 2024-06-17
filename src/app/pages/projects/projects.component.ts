@@ -22,7 +22,7 @@ export class ProjectsComponent {
       src: "assets/projects-images/2.png",
       name: "My Portfolio",
       codeUrl: "https://github.com/Abdelrahman-Magdii/Portfolio.git",
-      demoUrl: "https://abdelrahman-magdii.github.io/Portfolio.live/home",
+      demoUrl: "https://abdelrahman-magdii.github.io/Portfolio.live/",
       video:"https://www.linkedin.com/posts/abdelrahman-magdii_activity-7208423002206568448-ilM4?utm_source=share&utm_medium=member_desktop",
       techUsed: ["Html","Css","Angular","Bootstrap"]
     },
