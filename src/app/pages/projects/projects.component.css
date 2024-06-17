@@ -13,7 +13,7 @@
 .project-card img {
     width: 100%;
     transition: .3s;
-    filter: blur(1px);
+    filter: blur(.5px);
 }
 
 .project-card .text {
