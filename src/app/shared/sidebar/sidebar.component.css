@@ -1,0 +1,145 @@
+aside {
+    background-color:var(--white);
+    border-radius: 1.25rem;
+    position: relative;
+    padding-top: 140px;
+    padding-bottom: 25px;
+}
+
+@media (max-width: 992px) {
+    aside {
+        margin-top: 130px;
+    }
+}
+
+aside .image {
+    border-radius: 20px;
+    position: absolute;
+    top: -129px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 230px;
+}
+
+aside .title , .name {
+    font-weight: 500;
+    color: var(--body-color);
+}
+
+aside .social .links .link-item .link {
+    background-color: var(--light-color);
+    border-radius: 0.5rem;
+    width: 3.125rem;
+    height: 3.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+aside .social .links .link-item .link:hover {
+    background-color: var(--orange);
+}
+
+aside .social .links .link-item .link:hover i {
+    animation-name: comeFromTop;
+    animation-duration: 0.6s;
+}
+
+aside .contact {
+    background-color: var(--light-color);
+    width: 80%;
+    border-radius: 1.25rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+aside .contact ul {
+    padding-left: 0;
+}
+
+aside .contact ul li {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    transition: 0.3s;
+}
+
+aside .contact ul li {
+    text-decoration: none;
+}
+
+aside .contact ul li:not(:last-child) {
+    border-bottom: 1px solid #E3E3E3;
+}
+
+aside .contact ul li .icon {
+    color: var(--orange);
+}
+
+aside .contact ul li .text>h4:first-child {
+    color: var(--orange);
+}
+
+aside .contact ul li .icon i {
+    transition: 0.3s;
+    font-size: 1.9rem;
+}
+
+aside .contact ul li:hover {
+    cursor: cell;
+}
+
+aside .contact ul li .text a ,
+aside .contact ul li .text h6{
+    /* padding: 5px; */
+    font-family: Raleway, sans-serif;
+    color: var(--body-color);
+}
+
+aside .contact ul li:hover .text {
+    transform: translateX(0.625rem);
+}
+
+.linkedin-color {
+    color: #0077b5;
+}
+
+.github-color {
+    color: var(--gray-100);
+}
+
+.button-down {
+    --b: 3px;
+    --s: 0.45em;
+    --color: var(--orange);
+    padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background: conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: 0.3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: 0.6em;
+    font-size: 16px;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-down:hover,
+.button-down:focus-visible {
+    --_p: 0px;
+}
+
+.button-down:active {
+    background: var(--color);
+    color: #fff;
+}
+
+@keyframes comeFromTop {
+    0% {
+        transform: translateY(-80px);
+    }
+}

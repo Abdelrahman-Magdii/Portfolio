@@ -1,0 +1,35 @@
+<div class="d-flex align-items-center gap-3 mb-3">
+    <h2 class="mb-0 text-uppercase fs-25 poppins-font text">Projects</h2>
+    <div class="line"></div>
+</div>
+<h2 class="fs-20 poppins-font text-orange">Things I've built so far</h2>
+<div class="my-3">
+    @for(project of projects; track $index){
+    <div class="project-card mb-2">
+        <img [src]="project.src" [alt]="project.name" loading="lazy">
+        <div class="text">
+            <div class="d-flex justify-content-between align-items-center">
+                <h4 class="mb-0 fs-22 name">{{project.name}}</h4>
+                <div class="links d-flex align-items-center gap-1 gap-md-3">
+                    <a target="_blank" class="button-link" [href]="project.codeUrl">Github</a>
+                    @if(project.demoUrl==""){
+                        <a target="_blank" class="button-link">No Demo</a>
+                    }@if(project.demoUrl.length>0){
+                    <a target="_blank" class="button-link" [href]="project.demoUrl">Demo</a>
+                    }
+                    @if(project.video==""){
+                    <a target="_blank" class="button-link"> No Video</a>
+                    }@if(project.video.length>0){
+                        <a target="_blank" class="button-link" [href]="project.video">Video</a>
+                    }
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                @for( item of project.techUsed; track $index){
+                <span class="tech-used">{{item}}</span>
+                }
+            </div>
+        </div>
+    </div>
+    }
+</div>

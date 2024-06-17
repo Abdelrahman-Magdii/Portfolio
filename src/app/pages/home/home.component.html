@@ -1,0 +1,28 @@
+<div class="d-flex align-items-center justify-content-between gap-3 mb-3">
+    <h2 class="mb-0 text-uppercase fs-25 poppins-font text">About</h2>
+    <div class="line"></div>
+</div>
+<h2 class="fs-20 poppins-font text-orange">Welcome to my portfolio!</h2>
+<div>
+    <p class="mb-0 fs-16 mb-4 text">
+        I'm Abdelrahman Magdi, a passionate frontend developer with a knack for turning ideas into interactive,
+        user-friendly
+        websites and web applications. With a strong foundation in HTML, CSS, TypeScript and Angular, I specialize in
+        crafting
+        elegant and responsive digital experiences that not only meet the needs of users but also exceed expectations.
+        I'm passionate about cutting-edge, pixel-perfect, beutiful interfaces and intuitively implemented UX.
+    </p>
+    <h2 class="fs-20 poppins-font text-orange">What I do!</h2>
+    <div class="row">
+        @for (service of services; track $index) {
+        <div class="col-12 col-md-6 p-2">
+            <div class="service-card">
+                <img [src]="service.icon" alt="service icon" class="icon-img mb-2" loading="lazy">
+                <h4 class="fs-16 fw-bold text-sky">{{service.name}}</h4>
+                <h6 class="fs-12 fw-semibold text-red">{{service.caption}}</h6>
+                <p class="fs-12 text">{{service.description}}</p>
+            </div>
+        </div>
+        }
+    </div>
+</div>

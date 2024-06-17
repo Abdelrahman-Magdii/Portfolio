@@ -1,0 +1,25 @@
+<div class="d-flex align-items-center gap-3 mb-3">
+    <h2 class="mb-0 text-uppercase fs-25 poppins-font ">Resume</h2>
+    <div class="line"></div>
+</div>
+<div class="timeline-container">
+    <div class="wrapper">
+        <ul class="sessions">
+            @for (item of timeline; track $index) {
+            <li class="li-card">
+                <div class="time ">{{item.time}}</div>
+                <h4 class="fs-18 text-sky mb-1 fw-bold">{{item.name}}</h4>
+                <h6 class="fs-14 text-red">{{item.title}}</h6>
+                <span class="fs-14" >{{item.details.itm}}</span>
+                <div class="fs-14 " >{{item.details.div}}</div>
+                <div class="fs-14 " >{{item.details.div1}}</div>
+                <div class="fs-14 " >{{item.details.div2}}</div>
+                <div class="fs-14 " >{{item.details.div3}}</div>
+                <div class="fs-14 " >{{item.details.div4}}</div>
+                <div class="fs-14 " >{{item.details.div5}}</div>
+
+            </li>
+            }
+        </ul>
+    </div>
+</div>

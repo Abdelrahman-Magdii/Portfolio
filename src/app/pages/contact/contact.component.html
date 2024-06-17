@@ -1,0 +1,45 @@
+<div class="d-flex align-items-center justify-content-between gap-3 mb-3">
+    <h2 class="mb-0 text-uppercase fs-25 poppins-font">Contact</h2>
+    <div class="line"></div>
+</div>
+<h2 class="fs-20 poppins-font text-orange my-3">Let's Talk</h2>
+<div class="d-flex mb-5">
+    <div class="contact-card row">
+        <h5 class="contact-link col-12 col-md-6 d-flex align-items-center poppins-font mb-2">
+            <i class="ri-phone-line fs-18 me-2 text-orange"></i>
+            <span><a class="fs-14 d-flex align-items-center" href="https://wa.me/+201024855747" target="_blank">01024855747</a></span>
+        </h5>
+        <h5 class="contact-link col-12 col-md-6 d-flex align-items-center poppins-font mb-2">
+            <i class="ri-mail-line fs-18 me-2 text-orange"></i>
+            <span><a class="fs-14 d-flex align-items-center" href="mailto:Abdelrahmanmagdi527@gmail.com" target="_blank">{{email}}</a></span>
+        </h5>
+        <h5 class="contact-link col-12 col-md-6 d-flex align-items-center poppins-font mb-2 mb-md-0">
+            <i class="ri-github-fill fs-18 me-2 text-orange"></i>
+            <span><a class="fs-14  d-flex align-items-center" href="https://github.com/Abdelrahman-magdii" target="_blank">Github</a></span>
+        </h5>
+        <h5 class="contact-link col-12 col-md-6 d-flex align-items-center poppins-font mb-0">
+            <i class="ri-linkedin-fill fs-18 me-2 text-orange"></i>
+            <span><a class="fs-14 text-d d-flex align-items-center" href="https://www.linkedin.com/in/Abdelrahman-magdii/" target="_blank">LinkedIn</a></span>
+        </h5>
+    </div>
+</div>
+<h2 class="fs-20 poppins-font text-orange my-3">Send me a message</h2>
+<div>
+    <form [formGroup]="contactForm" (ngSubmit)="submitForm($event)">
+        <div class="d-flex mb-2">
+            <input type="text" placeholder="Your Name" formControlName="name" name="name">
+            <i class="ri-user-line fs-22 text-orange input-icon" [ngClass]="{'text-danger': (controls['name'].errors && controls['name'].touched) || (isSubmitted && controls['name'].errors)}"></i>
+        </div>
+        <div class="d-flex mb-2">
+            <input type="email" placeholder="Your Email" formControlName="email" name="mail">
+            <i class="ri-mail-send-line fs-22 text-orange input-icon" [ngClass]="{'text-danger': (controls['email'].errors && controls['email'].touched) || (isSubmitted && controls['email'].errors)}"></i>
+        </div>
+        <div class="d-flex mb-4">
+            <textarea name="" cols="30" rows="2" placeholder="How Can I Help You?" formControlName="message" name="message"></textarea>
+            <i class="ri-message-2-line fs-22 text-orange input-icon" [ngClass]="{'text-danger': (controls['message'].errors && controls['message'].touched) || (isSubmitted && controls['message'].errors)}"></i>
+        </div>
+        <div class="d-flex justify-content-end align-items-center mb-2">
+            <input type="submit" class="btn btn-danger" value="SEND">
+        </div>
+    </form>
+</div>
