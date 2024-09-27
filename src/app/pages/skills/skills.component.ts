@@ -18,6 +18,18 @@ export class SkillsComponent {
       textColor: "#FFF"
     },
     {
+      src: "assets/skills-logos/spring.svg",
+      name: "Spring",
+      bgColor: "green",
+      textColor: "#fff"
+    },
+    {
+      src: "assets/skills-logos/bootstrap.webp",
+      name: "Bootstrap",
+      bgColor: "#563d7c",
+      textColor: "#fff"
+    },
+    {
       src: "assets/skills-logos/ts.webp",
       name: "typescript",
       bgColor: "#3178c6",
@@ -41,30 +53,7 @@ export class SkillsComponent {
       bgColor: "#0074d9",
       textColor: "#fff"
     },
-    {
-      src: "assets/skills-logos/bootstrap.webp",
-      name: "Bootstrap",
-      bgColor: "#563d7c",
-      textColor: "#fff"
-    },
-    {
-      src: "assets/skills-logos/git.webp",
-      name: "Git",
-      bgColor: "#f34f29",
-      textColor: "#fff"
-    },
-    {
-      src: "assets/skills-logos/github.webp",
-      name: "Github",
-      bgColor: "#7f7f7f",
-      textColor: "#fff"
-    },
-    {
-      src: "assets/skills-logos/vscode.webp",
-      name: "VsCode",
-      bgColor: "#227EE5",
-      textColor: "#fff"
-    },
+
     {
       src: "assets/skills-logos/cplusplus.webp",
       name: "C++",
@@ -80,7 +69,7 @@ export class SkillsComponent {
     {
       src: "assets/skills-logos/python.png",
       name: "python",
-      bgColor:"yellow",
+      bgColor: "yellow",
       textColor: "#fff"
     },
     // {
@@ -94,7 +83,13 @@ export class SkillsComponent {
       name: "SQL",
       bgColor: "#2687CF",
       textColor: "#fff"
-    }, 
+    },
+    {
+      src: "assets/skills-logos/mysql.png",
+      name: "MySQL",
+      bgColor: "#2687CF",
+      textColor: "#fff"
+    },
     {
       src: "assets/skills-logos/oracle.png",
       name: "Oracle",
@@ -102,11 +97,37 @@ export class SkillsComponent {
       textColor: "#fff"
     },
     {
-      src: "assets/skills-logos/spring.svg",
-      name: "Spring",
+      src: "assets/skills-logos/mongo.png",
+      name: "MongoDB",
       bgColor: "green",
       textColor: "#fff"
     },
+    {
+      src: "assets/skills-logos/git.webp",
+      name: "Git",
+      bgColor: "#f34f29",
+      textColor: "#fff"
+    },
+    {
+      src: "assets/skills-logos/github.webp",
+      name: "Github",
+      bgColor: "#7f7f7f",
+      textColor: "#fff"
+    },
+    {
+      src: "assets/skills-logos/social.png",
+      name: "Docker",
+      bgColor: "#227EE5",
+      textColor: "#fff"
+    },
+    {
+      src: "assets/skills-logos/vscode.webp",
+      name: "VsCode",
+      bgColor: "#227EE5",
+      textColor: "#fff"
+    },
+
+
   ]
 
 }

@@ -27,6 +27,30 @@ export class ProjectsComponent {
       techUsed: ["Html","Css","Angular","Bootstrap"]
     },
     {
+      src: "assets/projects-images/shopping.png",
+      name: "Shopping API",
+      codeUrl: "https://github.com/Abdelrahman-Magdii/Shopping-API.git",
+      demoUrl: "",
+      video:"",
+      techUsed: ["Spring Boot(JPA, RESTful APIs, JWT, Filters, MYSQL, Swagger, MapStract, Lombok)","Spring Security"]
+    },
+    {
+      src: "assets/projects-images/students.png",
+      name: "Students System",
+      codeUrl: "https://github.com/Abdelrahman-Magdii/Back-end-Students-API.git",
+      demoUrl: "https://github.com/Abdelrahman-Magdii/Front-end-Students-API.git",
+      video:"https://www.linkedin.com/posts/abdelrahman-magdii_springboot-angular-fullstackdevelopment-activity-7235945238836506624-hTg0?utm_source=share&utm_medium=member_desktop",
+      techUsed: ["Spring Boot(JPA, RESTful APIs, JWT, Filters, Swagger)","MYSQL","Angular","Bootstrap"]
+    },
+    {
+      src: "assets/projects-images/specialDesign.png",
+      name: "Special Design",
+      codeUrl: "https://github.com/Abdelrahman-Magdii/Special_Design.git",
+      demoUrl: "https://abdelrahman-magdii.github.io/Special_Design/",
+      video:"https://www.linkedin.com/posts/abdelrahman-magdii_i-am-happy-to-share-my-design-when-designing-activity-7210532459296313344-Rp9A?utm_source=share&utm_medium=member_desktop",
+      techUsed: ["HTML","CSS","JS"]
+    },
+    {
       src: "assets/projects-images/3.png",
       name: " Template 4 Dashboard",
       codeUrl: "https://github.com/Abdelrahman-Magdii/HTML-And-CSS-Temp4.git",

@@ -10,7 +10,13 @@ aside {
     aside {
         margin-top: 130px;
     }
+
+    .text a,
+    .text h6{
+      font-size: 12px;
+    }
 }
+
 
 aside .image {
     border-radius: 20px;

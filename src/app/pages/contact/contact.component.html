@@ -23,7 +23,7 @@
         </h5>
     </div>
 </div>
-<h2 class="fs-20 poppins-font text-orange my-3">Send me a message</h2>
+<h2 class="fs-20 poppins-font text-orange my-3">Send message</h2>
 <div>
     <form [formGroup]="contactForm" (ngSubmit)="submitForm($event)">
         <div class="d-flex mb-2">
@@ -43,3 +43,5 @@
         </div>
     </form>
 </div>
+
+<!-- {{contactForm.value | json}} -->
