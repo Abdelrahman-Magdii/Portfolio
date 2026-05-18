@@ -1,0 +1,169 @@
+import { NgStyle } from '@angular/common';
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-skills',
+  standalone: true,
+  imports: [NgStyle],
+  templateUrl: './skills.component.html',
+  styleUrl: './skills.component.css'
+})
+export class SkillsComponent {
+
+  skills = [
+
+    // Frontend
+    {
+      src: "assets/skills-logos/angular.webp",
+      name: "Angular",
+      bgColor: "#dd1b16",
+      textColor: "#FFF"
+    },
+    {
+      src: "assets/skills-logos/ts.webp",
+      name: "TypeScript",
+      bgColor: "#3178c6",
+      textColor: "#FFF"
+    },
+    {
+      src: "assets/skills-logos/js.webp",
+      name: "JavaScript",
+      bgColor: "#f0db4f",
+      textColor: "#323330"
+    },
+    {
+      src: "assets/skills-logos/html.webp",
+      name: "HTML",
+      bgColor: "#e34c26",
+      textColor: "#fff"
+    },
+    {
+      src: "assets/skills-logos/css.webp",
+      name: "CSS",
+      bgColor: "#0074d9",
+      textColor: "#fff"
+    },
+    {
+      src: "assets/skills-logos/bootstrap.webp",
+      name: "Bootstrap",
+      bgColor: "#563d7c",
+      textColor: "#fff"
+    },
+
+    // Backend
+    {
+      src: "assets/skills-logos/spring.svg",
+      name: "Spring Boot",
+      bgColor: "#6DB33F",
+      textColor: "#fff"
+    },
+    {
+      src: "assets/skills-logos/web.png",
+      name: "Java",
+      bgColor: "#f89820",
+      textColor: "#fff"
+    },
+
+    // Programming Languages
+    {
+      src: "assets/skills-logos/python.png",
+      name: "Python",
+      bgColor: "#3776AB",
+      textColor: "#fff"
+    },
+    {
+      src: "assets/skills-logos/cplusplus.webp",
+      name: "C++",
+      bgColor: "#00599C",
+      textColor: "#fff"
+    },
+
+    // Databases
+    {
+      src: "assets/skills-logos/sql.webp",
+      name: "SQL",
+      bgColor: "#2687CF",
+      textColor: "#fff"
+    },
+    {
+      src: "assets/skills-logos/mysql.png",
+      name: "MySQL",
+      bgColor: "#00758F",
+      textColor: "#fff"
+    },
+    {
+      src: "assets/skills-logos/oracle.png",
+      name: "Oracle",
+      bgColor: "#C74634",
+      textColor: "#fff"
+    },
+    {
+      src: "assets/skills-logos/mongo.png",
+      name: "MongoDB",
+      bgColor: "#47A248",
+      textColor: "#fff"
+    },
+
+    // DevOps & Tools
+    {
+      src: "assets/skills-logos/git.webp",
+      name: "Git",
+      bgColor: "#f34f29",
+      textColor: "#fff"
+    },
+    {
+      src: "assets/skills-logos/github.webp",
+      name: "GitHub",
+      bgColor: "#181717",
+      textColor: "#fff"
+    },
+    {
+      src: "assets/skills-logos/social.png",
+      name: "Docker",
+      bgColor: "#2496ED",
+      textColor: "#fff"
+    },
+    {
+      src: "assets/skills-logos/vscode.webp",
+      name: "VS Code",
+      bgColor: "#007ACC",
+      textColor: "#fff"
+    },
+
+    // Microservices & Messaging
+    {
+      src: "assets/skills-logos/kafka.png",
+      name: "Apache Kafka",
+      bgColor: "#000000",
+      textColor: "#fff"
+    },
+    {
+      src: "assets/skills-logos/rabbitmq.png",
+      name: "RabbitMQ",
+      bgColor: "#FF6600",
+      textColor: "#fff"
+    },
+
+    // API & Testing
+    {
+      src: "assets/skills-logos/swagger.png",
+      name: "Swagger",
+      bgColor: "#85EA2D",
+      textColor: "#000"
+    },
+    {
+      src: "assets/skills-logos/postman.png",
+      name: "Postman",
+      bgColor: "#FF6C37",
+      textColor: "#fff"
+    },
+    {
+      src: "assets/skills-logos/junit.png",
+      name: "JUnit",
+      bgColor: "#25A162",
+      textColor: "#fff"
+    }
+
+  ];
+
+}

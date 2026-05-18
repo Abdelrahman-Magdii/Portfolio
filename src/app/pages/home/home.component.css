@@ -1,0 +1,21 @@
+.service-card {
+    padding: 0.5rem;
+    border-radius: 0.625rem;
+    background-color: var(--light-color);
+    text-align: center;
+    transition: 0.3s;
+    min-height: 16.625rem;
+}
+
+.text{
+    color: var(--body-color);
+}
+
+.service-card .icon-img {
+    width: 6.5rem;
+}
+
+.service-card:hover {
+    background-color: var(--light-color-2);
+}
+

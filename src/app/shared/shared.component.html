@@ -1,0 +1,18 @@
+<div class="container-fluid px-md-5">
+    <app-topbar></app-topbar>
+    <div class="d-flex flex-column-reverse flex-lg-column">
+        <div class="row tabs mb-3">
+            <app-tabs></app-tabs>
+        </div>
+        <div class="row mb-4">
+            <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                <app-sidebar></app-sidebar>
+            </div>
+            <div class="col-12 col-lg-8 content-container">
+                <div class="px-5 py-3 rounded content">
+                    <router-outlet></router-outlet>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

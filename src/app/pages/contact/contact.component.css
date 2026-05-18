@@ -1,0 +1,93 @@
+.contact-card {
+    flex-grow: 1;
+}
+
+.contact-card h5 a , h2 {
+    color: var(--body-color);
+}
+
+.row {
+    --bs-gutter-x: 0;
+}
+
+a{
+    text-decoration: none;
+}
+.row .contact-link {
+    background-color: var(--light-color-2);
+    padding: 1rem;
+}
+
+.row .contact-link:nth-child(odd) {
+    border-left: 3px solid var(--orange);
+}
+
+@media (max-width: 768px) {
+    .row .contact-link {
+        border-left: 3px solid var(--orange);
+    }
+}
+
+.row .contact-link span a {
+    transition: 0.3s;
+}
+
+.row .contact-link span a:hover {
+    color: var(--orange) !important;
+    transform: translateY(-3px);
+}
+
+form .d-flex {
+    position: relative;
+}
+
+form .d-flex .input-icon {
+    position: absolute;
+    top: 50%;
+    left: 0.5rem;
+    transform: translateY(-50%);
+}
+
+form .d-flex:nth-last-child(2) .input-icon {
+    top: 0;
+    transform: unset;
+}
+
+form input[type='text'],
+form input[type='email'],
+form textarea {
+    position: relative;
+    background-color: transparent;
+    padding: 8px 12px;
+    border: none;
+    border-bottom: 1px solid var(--orange);
+    color: var(--gray-100);
+    transition: 0.3s;
+    flex-grow: 1;
+    text-indent: 1.8rem;
+    font-size: 1rem;
+}
+
+form input[type='text']:focus,
+form input[type='email']:focus,
+form textarea:focus {
+    outline: none;
+    /* border-bottom-color: #eb0867; */
+}
+
+form input[type='text']::placeholder,
+form input[type='email']::placeholder,
+form textarea::placeholder {
+    font-size: 0.9rem;
+    color: #838383;
+}
+
+form input[type='text'].ng-touched.ng-invalid,
+form input[type='email'].ng-touched.ng-invalid,
+form textarea.ng-touched.ng-invalid {
+    border-bottom-color: var(--bs-danger);
+}
+
+form textarea {
+    resize: none;
+}

@@ -1,0 +1,44 @@
+.content-container {
+    margin-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+    .content-container {
+        margin-bottom: 80px;
+    }
+}
+
+.content-container .content {
+    overflow: auto;
+    height: 100%;
+    background-color: var(--white);
+
+}
+
+@media (min-width: 992px) {
+    .content-container .content {
+        height: 636.02px;
+    }
+}
+
+@media (min-width: 1201px) {
+    .content-container .content {
+        height: 690.42px;
+    }
+}
+
+.content-container .content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.content-container .content::-webkit-scrollbar-track {
+    background-color: var(--dark-color);
+    border-top-right-radius: 9px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.content-container .content::-webkit-scrollbar-thumb {
+    background-color: var(--orange);
+    border-radius: 20px;
+}

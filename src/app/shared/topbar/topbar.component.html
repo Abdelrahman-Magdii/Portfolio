@@ -1,0 +1,15 @@
+<nav class="py-2 py-lg-3 mb-0 mb-lg-5">
+    <div class="d-flex justify-content-between align-items-center">
+        <h1 class="mb-0 pacifico-font fs-24">Abdelrahman <span class="text-orange">Magdi</span></h1>
+        <div>
+            <div class="mode-icon-container cursor-pointer light-dark-mode">
+                @if (mode === modeKey.light) {
+                <i class="ri-moon-line fs-20 mode-icon" (click)="changeMode(modeKey.dark)"></i>
+                }
+                @if (mode === modeKey.dark) {
+                <i class="ri-sun-line fs-20 mode-icon text-light" (click)="changeMode(modeKey.light)"></i>
+                }
+            </div>
+        </div>
+    </div>
+</nav>

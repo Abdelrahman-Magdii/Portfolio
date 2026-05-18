@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600&family=Raleway:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --light-color-2: #F2F5F9; /*body*/
+    --light-color: #E1E8EF; /*section */
+    --dark-color-1: #1d1b18; 
+    /* --orange: #FF9C1B; */
+    --orange:#20e261;
+    --lemon: #20e261;
+    --skyBlue: #aa3aff;
+    --red: #eb0867;
+    --white: #FFF;
+    --gray-100: #212529;
+    --shadow: rgba(100, 100, 111, 0.2);
+    --body-bg: #F2F5F9; /*body*/
+    --body-color:black;/*text*/
+    --pacifico-font: 'Pacifico', cursive;
+    --poppins-font: 'Poppins', sans-serif;
+    --raleway-font: 'Raleway', sans-serif;
+}
+
+[mode="dark"] {
+    --light-color: #1a1d21;
+    --light-color-2: #212529;
+    --dark-color-1: #FFF;
+    --body-color: #E1E8EF;/*text */
+    /* --orange: #20e261; */
+    --orange:#ff1010;
+    --lemon: #FF9C1B;
+    /* --skyBlue: #20e261; */
+    --skyBlue:#ff1010;
+    --red: #058ED9;
+    --white: #292e32;
+    --gray-100: #ced4da;
+    --shadow: rgb(0 0 0 / 23%);
+}
+
+@media (max-width: 768px) {
+    :root {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 991px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1201px) {
+    :root {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1201px) {
+    :root {
+        font-size: 18px;
+    }
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root body{
+    background-color: var(--light-color);
+
+}
+
+i {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Pacifico', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+.cursor {
+    cursor: none;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #eb0867;
+    border-radius: 50%;
+}
+
+html::-webkit-scrollbar {
+    width: .625rem;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: var(--light-color-2);
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--orange);
+}
+
+.line {
+    background-color: var(--orange);
+    height: 1px;
+    width: 100%;
+}
+
+
+
+.pacifico-font {
+    font-family: var(--pacifico-font);
+}
+
+.poppins-font {
+    font-family: var(--poppins-font);
+}
+
+.raleway-font {
+    font-family: var(--raleway-font);
+}
+
+.bg-main {
+    background-color: var(--light-color);
+}
+
+.bg-white {
+    background-color: var(--white) !important;
+}
+
+.text-orange {
+    color: var(--orange);
+}
+
+.text-lemon {
+    color: var(--lemon);
+}
+
+.text-sky {
+    color: var(--skyBlue);
+}
+
+.text-red {
+    color: var(--red);
+}
+
+.text-white {
+    color: var(--red);
+}
+
+.text-dark {
+    color: var(--gray-100) !important;
+}
+
+.text-dark-1 {
+    color: var(--dark-color-1);
+}
+
+.fw-semibold {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:focus-visible {
+    padding: .2rem;
+    border: 1px solid var(--orange);
+    outline: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+[data-topbar="dark"] .bg-main {
+    background-color: red !important;
+}
+
+.rounded {
+    border-radius: 20px !important;
+}
+
+@keyframes line {
+    0% {
+        transform: translateX(50px);
+    }
+
+    50% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(50px);
+    }
+}
+
+
+
+.fs-10 { font-size: 0.625rem; }
+.fs-11 { font-size: 0.6875rem; }
+.fs-12 { font-size: 0.75rem; }
+.fs-13 { font-size: 0.8125rem; }
+.fs-14 { font-size: 0.875rem; }
+.fs-15 { font-size: 0.9375rem; }
+.fs-16 { font-size: 1rem; }
+.fs-17 { font-size: 1.0625rem; }
+.fs-18 { font-size: 1.125rem; }
+.fs-19 { font-size: 1.1875rem; }
+.fs-20 { font-size: 1.25rem; }
+.fs-21 { font-size: 1.3125rem; }
+.fs-22 { font-size: 1.375rem; }
+.fs-23 { font-size: 1.4375rem; }
+.fs-24 { font-size: 1.5rem; }
+.fs-25 { font-size: 1.5625rem; }
+.fs-26 { font-size: 1.625rem; }
+.fs-27 { font-size: 1.6875rem; }
+.fs-28 { font-size: 1.75rem; }
+.fs-29 { font-size: 1.8125rem; }
+.fs-30 { font-size: 1.875rem; }
+.fs-31 { font-size: 1.9375rem; }
+.fs-32 { font-size: 2rem; }
+.fs-33 { font-size: 2.0625rem; }
+.fs-34 { font-size: 2.125rem; }
+.fs-35 { font-size: 2.1875rem; }
+.fs-36 { font-size: 2.25rem; }
+.fs-37 { font-size: 2.3125rem; }
+.fs-38 { font-size: 2.375rem; }
+.fs-39 { font-size: 2.4375rem; }
+.fs-40 { font-size: 2.5rem; }
+.fs-41 { font-size: 2.5625rem; }
+.fs-42 { font-size: 2.625rem; }
+.fs-43 { font-size: 2.6875rem; }
+.fs-44 { font-size: 2.75rem; }
+.fs-45 { font-size: 2.8125rem; }
+.fs-46 { font-size: 2.875rem; }
+.fs-47 { font-size: 2.9375rem; }
+.fs-48 { font-size: 3rem; }
+.fs-49 { font-size: 3.0625rem; }
+.fs-50 { font-size: 3.125rem; }
+
